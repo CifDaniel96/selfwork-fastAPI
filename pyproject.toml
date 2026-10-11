@@ -1,0 +1,20 @@
+[project]
+name = "movie-catalog-api"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Daniel Ciferni",email = "cif.daniel96@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi (>=0.143.0,<0.144.0)",
+    "uvicorn (>=0.54.0,<0.55.0)"
+]
+
+[tool.poetry]
+packages = [{include = "movie_catalog_api", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
